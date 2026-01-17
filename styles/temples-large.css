@@ -1,0 +1,51 @@
+/* Larger view: show nav inline, expand grid */
+@media (min-width: 768px) {
+  /* Header layout */
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .brand {
+    padding: 0.75rem 1.25rem;
+  }
+
+  /* Hide hamburger on larger screens */
+  #hamburger { display: none; }
+
+  /* Nav becomes horizontal flex */
+  .nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .nav a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Main width can grow a bit */
+  main {
+    max-width: 1100px;
+    margin: 1.25rem auto 2rem;
+  }
+
+  /* Grid: auto-fit responsive columns */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+  }
+
+  figure img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* Even larger screens */
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
