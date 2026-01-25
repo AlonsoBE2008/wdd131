@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lima Perú</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Lima Perú</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-small.jpg" media="(min-width: 600px)" />
+        <img src="images/hero-small.jpg" alt="Vista panorámica de Lima, Perú" />
+      </picture>
+      <div class="overlay data">
+        <h2>Data</h2>
+        <p>Population: 1.2 million</p>
+        <p>Language: Spanish</p>
+        <p>Currency: Sol</p>
+        <p>Region: Lima</p>
+        <p>Timezone: PET</p>
+      </div>
+
+      <div class="overlay weather">
+        <h2>Weather <span class="weather-icon"></span></h2>
+        <img src="images/weather-icon.svg" alt="Weather icon" class="mobile-icon" />
+        <p>Temperature: 18°C</p>
+        <p>Wind Speed: 10 km/h</p>
+        <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Alonso - Comas, Perú</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
