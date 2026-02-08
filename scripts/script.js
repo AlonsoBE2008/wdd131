@@ -1,3 +1,4 @@
+
 const products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -7,9 +8,24 @@ const products = [
 ];
 
 const productSelect = document.getElementById("product");
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  productSelect.appendChild(option);
-});
+if (productSelect) {
+  products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
+  });
+}
+const reviewCountElement = document.getElementById("reviewCount");
+if (reviewCountElement) {
+  let count = localStorage.getItem("reviewCount") || 0;
+  count++;
+  localStorage.setItem("reviewCount", count);
+  reviewCountElement.textContent = count;
+}
+
+// Last modification date
+const lastModifiedElement = document.getElementById("lastModified");
+if (lastModifiedElement) {
+  lastModifiedElement.textContent = document.lastModified;
+}

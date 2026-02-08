@@ -4,26 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Review Confirmation</title>
+  <meta name="description" content="Confirmation page for submitted product reviews. Displays total reviews submitted.">
+  <meta name="author" content="Alonso Cajahuaman Sotelo">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <h1>Thank you for your review!</h1>
+  <header>
+    <h1>Thank you for your review!</h1>
+  </header>
+
   <p>Your feedback has been submitted successfully.</p>
   <p>Total reviews submitted: <span id="reviewCount"></span></p>
 
-    <footer> 
-    <p>©2026 🌸 Alonso Cajahuaman Sotelo 🌸<br> 
+  <footer>
+    <p>©2024 🌸 Alonso Cajahuaman Sotelo 🌸<br>
     Perú<br>
     Last Modification: <span id="lastModified"></span></p>
-    </footer> 
-    <script src="scripts/script.js"></script>
-    <script> document.getElementById("lastModified").textContent = document.lastModified; </script>
+  </footer>
 
-  <script>
-    let count = localStorage.getItem("reviewCount") || 0;
-    count++;
-    localStorage.setItem("reviewCount", count);
-    document.getElementById("reviewCount").textContent = count;
-  </script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
