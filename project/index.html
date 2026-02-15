@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recetas Caseras: easy homemade recipes with clear steps, ingredients, and tips for everyday cooking.">
+  <meta name="author" content="Alonso Cajahuaman Sotelo">
+  <title>Recetas Caseras — Home</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Recetas Caseras</h1>
+        <p class="tagline">Easy homemade recipes for everyday cooking</p>
+      </div>
+      <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <nav id="mainNav" class="main-nav" role="navigation" aria-label="Main navigation">
+    <ul class="nav-list container">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="siteplan.html">Site Plan</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+
+  <main class="container" id="main" role="main">
+    <section class="hero" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome</h2>
+      <p class="lead">Simple, tested recipes you can make at home with minimal ingredients and clear step-by-step instructions. Each recipe includes ingredients, preparation steps, tips, and an estimated time.</p>
+      <div class="hero-actions">
+        <a class="btn" href="recipes.html">Browse Recipes</a>
+        <a class="btn secondary" href="contact.html">Send Feedback</a>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-heading">
+      <h3 id="about-heading">About this project</h3>
+      <p>This site my student project for WDD131. The goal is to demonstrate responsive HTML, accessible markup, CSS design, and JavaScript interactivity. Content is original and written for this project.</p>
+      <ul>
+        <li><strong>Target audience:</strong> Home cooks, beginners, busy students.</li>
+        <li><strong>Design goals:</strong> Readability, fast load, mobile-first layout.</li>
+      </ul>
+    </section>
+
+    <section class="features" aria-labelledby="features-heading">
+      <h3 id="features-heading">What you'll find</h3>
+      <ul>
+        <li>Clear recipes with ingredient lists and step-by-step instructions.</li>
+        <li>Optimized images with lazy loading for faster pages.</li>
+        <li>A contact form that saves messages to localStorage for demonstration.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Recetas Caseras | Created by Alonso Cajahuaman Sotelo</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>

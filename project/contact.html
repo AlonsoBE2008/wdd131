@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Recetas Caseras: send feedback or recipe suggestions using the form.">
+  <meta name="author" content="Alonso Cajahuaman Sotelo">
+  <title>Recetas Caseras — Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Recetas Caseras</h1>
+        <p class="tagline">Contact and feedback</p>
+      </div>
+      <button id="navToggle3" class="nav-toggle" aria-controls="mainNav" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+    <ul class="nav-list container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="siteplan.html">Site Plan</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+
+  <main class="container" id="main">
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Send us a message</h2>
+      <p>If you have a recipe suggestion, feedback, or a question, use the form below. Submissions are saved locally in your browser for demonstration purposes.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" aria-required="true">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Recetas Caseras | Alonso Cajahuaman Sotelo</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
